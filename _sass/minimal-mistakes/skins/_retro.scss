@@ -1,0 +1,178 @@
+/* ==========================================================================
+   Sunrise skin
+   ========================================================================== */
+
+/* Colors */
+$dark-gray: #0e2431 !default;
+$background-color: #F0FDF5 !default;
+$text-color: #000 !default;
+$muted-text-color: $dark-gray !default;
+$primary-color: #3BD77C !default;
+$border-color: mix(#000, $background-color, 20%) !default;
+$code-background-color: mix(#fff, $background-color, 20%) !default;
+$code-background-color-dark: mix(#000, $background-color, 10%) !default;
+$form-background-color: mix(#fff, $background-color, 15%) !default;
+$footer-background-color: #000000 !default;
+$link-color: mix(#000, $primary-color, 10%) !default;
+$link-color-hover: mix(#fff, $link-color, 25%) !default;
+$link-color-visited: mix(#000, $link-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+$light-green: #F0FDF5;
+$transparent-black: rgba(0, 0, 0, 0.3);
+/* notices */
+$notice-background-mix: 100% !default;
+
+/* sunrise syntax highlighting (base16) */
+$base00: #1d1f21 !default;
+$base01: #282a2e !default;
+$base02: #373b41 !default;
+$base03: #969896 !default;
+$base04: #b4b7b4 !default;
+$base05: #c5c8c6 !default;
+$base06: #e0e0e0 !default;
+$base07: #ffffff !default;
+$base08: #cc6666 !default;
+$base09: #de935f !default;
+$base0a: #f0c674 !default;
+$base0b: #b5bd68 !default;
+$base0c: #8abeb7 !default;
+$base0d: #81a2be !default;
+$base0e: #b294bb !default;
+$base0f: #a3685a !default;
+
+$roboto: 'Roboto Mono', monospace;
+$montserrat: 'Montserrat', sans-serif;
+$sans-serif: $roboto;
+$global-font-family: $roboto !important;
+$header-font-family: $roboto !important;
+$caption-font-family: $roboto !important;
+$global-transition: all 0.2s ease-in-out !default;
+.social-icons i .page__footer, 
+.page__footer-copyright, 
+.page__footer-follow,
+footer .social-icons i,
+footer .social-icons .svg-inline--fa{
+  color: white !important;
+}
+
+
+.page__content{
+  .banner,
+  p,
+  li,
+  dl {
+    font-size: 0.7em !important;
+  }
+  
+}
+
+mark{
+  background-color: #c0fbd7;
+}
+
+.banner {
+  border-left: 5px solid $primary-color;
+  padding-left: 1.1rem;
+  padding-right: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin-left: 1rem;
+  background-color: #c0fbd7;
+  border-radius: 5px;
+}
+
+.page__title,
+.archive__item-title{
+  font-family: $montserrat !important;
+}
+
+.wrapper{
+  .page__title,
+  h1.archive__item-title,
+  .page__lead
+  {
+    font-family: $montserrat !important;
+    background-color: $transparent-black;
+  }
+}
+
+.masthead__menu-item{
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+.site-title{
+  
+  font-size: 0.7em;
+  font-weight: 400 !important;
+
+}
+
+
+.archive__item-retro{
+  background-color: #fff;
+  border: 1.5px solid #000000;
+  border-radius: 16px;
+  transition: $global-transition;
+  position: relative;
+
+  a {
+    position: relative;
+    z-index: 10;
+  }
+
+  a[rel="permalink"] {
+    position: static;
+  }
+  &:hover {
+    transform: translate(0px, -2px);
+    box-shadow: 2px 2px 0px #000000;
+  }
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-left: 0.5em;
+  img {
+    width: 30%;
+    max-width: 100%;
+    min-height: 11rem;
+    background-size: cover;
+    background-position: 50% 50%;
+    object-fit: cover;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+  }
+  .archive__item-content {
+    padding: 1rem;
+    width: 70%;
+  }
+  .archive__item-title{
+    margin-top: 0.5em !important;
+  }
+}
+
+$right-sidebar-width : 200px;
+
+.author__bio,
+.author__urls{
+  font-size: 18px;
+}
+
+div.highlight{
+  font-size: 0.7em !important;
+}
+
+.pagination--pager {
+  color: $text-color;
+  background-color: rbga(0,0,0,1);
+  border-color: transparent !important;
+
+  &:visited {
+    color: $text-color;
+  }
+}
